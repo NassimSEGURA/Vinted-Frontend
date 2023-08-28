@@ -1,0 +1,373 @@
+/* GENERAL PART */
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+button,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+a {
+  margin-top: 20px;
+  text-decoration: none;
+}
+/* HEADER PART */
+.navContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 0;
+  width: 1280px;
+}
+header > div:first-child,
+.headerLogo {
+  cursor: pointer;
+}
+.headerLogo {
+  height: 40px;
+}
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.search-input {
+  background-color: #f5f6f7;
+  border: none;
+  border-radius: 5px;
+  font-family: Maison Neue;
+  font-size: 16px;
+  height: 37px;
+  outline: none;
+  padding-left: 40px;
+  width: 590px;
+}
+.search-input-icon {
+  color: #bbb;
+  left: 7px;
+  position: absolute;
+  top: 12px;
+}
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.checkbox {
+  margin-right: 25px;
+}
+.checkbox .wrapper {
+  align-items: center;
+  background-color: #2cb1ba;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  height: 20px;
+  outline: none;
+  width: 42px;
+}
+.checkbox .knob,
+.home-loader {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.checkbox .knob {
+  background-color: #fff;
+  border: 1px solid #666;
+  border-radius: 100%;
+  font-weight: 700;
+  height: 16px;
+  left: 0;
+  position: relative;
+  transition: left 0.1s ease-in-out 0s;
+  width: 16px;
+}
+.button-signup {
+  margin-right: 20px;
+}
+.button-login-signup {
+  background-color: #fff;
+  color: #2cb1ba;
+}
+.header-button {
+  border: 1px solid #2cb1ba;
+  border-radius: 5px;
+  font-family: Maison Neue;
+  font-size: 12px;
+  height: 30px;
+  outline: none;
+  width: 115px;
+}
+.button-sold {
+  background-color: #2cb1ba;
+  color: #fff;
+}
+.home-hero-bg-img {
+  background-image: url(./assets/img/hero.jpg);
+  background-position: 50%;
+  background-size: cover;
+  height: 455px;
+  position: relative;
+  width: 100%;
+}
+.home-hero-forme {
+  bottom: 0;
+  height: 80px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+.home-hero-bg-img > div {
+  margin: auto;
+  width: 1280px;
+}
+.home-hero-ready {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 2px hsla(0, 0%, 7%, 0.24);
+  display: flex;
+  flex-direction: column;
+  font-size: 34px;
+  height: 220px;
+  justify-content: center;
+  padding: 25px;
+  position: absolute;
+  top: 75px;
+  width: 360px;
+}
+.home-hero-ready button {
+  background-color: #2baeb7;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  height: 45px;
+  margin-top: 32px;
+  padding: 0 14px;
+  width: 187px;
+}
+/* END HEADER START MAIN */
+.homeCardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto auto;
+  width: 1280px;
+}
+.card-container {
+  cursor: pointer;
+  padding: 0 6px 16px;
+  width: 235px;
+}
+.card-avatar-username {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+.card-container div:last-child img {
+  height: 360px;
+  object-fit: cover;
+  width: 235px;
+}
+.card-price-size-brand {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.card-avatar-username > img {
+  border-radius: 50%;
+  height: 25px;
+  margin-right: 10px;
+  object-fit: cover;
+  width: 25px;
+}
+.card-avatar-username > span {
+  color: #999;
+  font-size: 12px;
+}
+.card-price-size-brand span:first-child {
+  font-size: 14px;
+}
+.card-price-size-brand span:not(:first-child) {
+  color: #999;
+  font-size: 12px;
+}
+/* PAGE OFFER */
+.offer-page {
+  background-color: #ebedee;
+  height: calc(100vh - 60px);
+}
+.offer-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 30px;
+  width: 1280px;
+}
+.offer-picture {
+  height: 600px;
+  object-fit: cover;
+}
+.offer-infos {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 320px;
+}
+.offer-price {
+  color: #111;
+  font-size: 24px;
+  line-height: 32px;
+}
+.offer-list {
+  list-style-type: none;
+  padding: 0;
+}
+.offer-list li {
+  display: flex;
+  padding: 2px 0;
+}
+.offer-infos .divider {
+  background: hsla(0, 0%, 7%, 0.1);
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+.offer-content .name {
+  font-weight: 700;
+}
+.offer-content .description {
+  color: #666;
+}
+.offer-avatar-username {
+  align-items: center;
+  display: flex;
+}
+.offer-avatar-username > img {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  width: 50px;
+}
+.offer-infos button {
+  background: #09b1ba;
+  border: 1px solid #09b1ba;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 32px;
+  padding: 0 16px;
+  width: 100%;
+}
+.offer-list span:nth-child(odd) {
+  color: #999;
+}
+.offer-list span {
+  flex: 1 1;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.offer-list span:nth-child(2n) {
+  color: #666;
+  font-weight: 700;
+}
+/* Page Signup */
+.signup-container,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+.signup-container {
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+}
+.signup-form {
+  margin: auto;
+  width: 275px;
+}
+.signup-form > input {
+  border: none;
+  border-bottom: 1px solid #fcced3;
+  height: 35px;
+  margin-bottom: 20px;
+}
+.signup-login-error-message {
+  color: red;
+  font-size: 9px;
+}
+.checkbox-container {
+  margin-top: 20px;
+  padding: 10px;
+}
+.signup-form input[type="checkbox"] {
+  margin-right: 20px;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+button,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+.checkbox-container span {
+  color: #666;
+}
+.checkbox-container > p {
+  color: #999;
+  font-size: 12px;
+  text-align: left;
+}
+.signup-form button {
+  background-color: #2cb1ba;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  height: 45px;
+  margin-top: 20px;
+  outline: none;
+  width: 100%;
+}
+.signup-container a {
+  color: #2cb1ba;
+  font-size: 12px;
+}
