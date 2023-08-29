@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OfferDetails = ({ offerData }) => {
   return (
@@ -38,7 +39,15 @@ const OfferDetails = ({ offerData }) => {
             <span>{offerData.owner.account.username}</span>
           </div>
         </div>
-        <button>Acheter</button>
+        <Link
+          to={`/payment`}
+          state={{
+            title: offerData.product_name,
+            price: offerData.product_price,
+          }}
+        >
+          <button>Acheter</button>
+        </Link>
       </div>
     </div>
   );

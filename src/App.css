@@ -180,6 +180,16 @@ svg:not(:root).svg-inline--fa {
   padding: 0 14px;
   width: 187px;
 }
+.logout-button {
+  background-color: #c2175b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Maison Neue;
+  font-size: 12px;
+  height: 30px;
+  outline: none;
+}
 /* END HEADER START MAIN */
 .homeCardWrapper {
   display: flex;
@@ -370,4 +380,52 @@ input[type="checkbox"] {
 .signup-container a {
   color: #2cb1ba;
   font-size: 12px;
+}
+/* Publish Page */
+.publish-container {
+  background-color: #ebedee;
+  margin: 0 auto;
+  width: 1280px;
+}
+.publish-container h2 {
+  font-family: Maison Neue;
+  font-size: 24px;
+  padding-top: 40px;
+}
+.file-container {
+  background-color: #fff;
+  box-shadow: 0 0 2px gray;
+  margin: 20px 0;
+  padding: 24px;
+}
+.file-centerer {
+  align-items: center;
+  border: 1px dashed #ebedee;
+  border-radius: 3px;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+}
+.file-input-wrapper {
+  align-items: center;
+  border: 1px solid #0ab1ba;
+  border-radius: 4px;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+}
+.file-label {
+  color: #0ab1ba;
+  cursor: pointer;
+  font-weight: 700;
+}
+.file-label > span {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+.input-sign {
+  font-size: 40px;
+}
+.file-input {
+  display: none;
 }

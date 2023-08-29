@@ -85,7 +85,7 @@ const Signup = ({ setIsLoggedIn, isLoggedIn }) => {
           {isLoading ? "Chargement..." : "S'inscrire"}
         </button>
       </form>
-      <a href="/login">Tu as déjà un compte ? Connecte-toi !</a>
+      <Link to="/login">Tu as déjà un compte ? Connecte-toi !</Link>
       {isLoggedIn && <Navigate to="/" />}
     </div>
   );

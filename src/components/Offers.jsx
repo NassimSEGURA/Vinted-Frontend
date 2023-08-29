@@ -5,7 +5,6 @@ const Offers = ({ data }) => {
     <div className="homeCardWrapper">
       {data.offers.map((offer, index) => (
         <Link key={offer._id} to={`/offer/${offer._id}`}>
-          {/* Wrap each offer in a Link */}
           <div className="card-container">
             <div className="card-avatar-username">
               <img

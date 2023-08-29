@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import logo from "../assets/img/logo.png";
 
@@ -166,7 +166,9 @@ const Navbar = ({ setIsLoggedIn, isLoggedIn }) => {
       <div>
         {isLoggedIn ? (
           // Si l'utilisateur est connecté, affiche le bouton de déconnexion
-          <button onClick={handleLogout}>Se déconnecter</button>
+          <button className="logout-button" onClick={handleLogout}>
+            Se déconnecter
+          </button>
         ) : (
           // Si l'utilisateur n'est pas connecté, affiche les boutons d'inscription et de connexion
           <div>
@@ -183,7 +185,11 @@ const Navbar = ({ setIsLoggedIn, isLoggedIn }) => {
           </div>
         )}
       </div>
-      <button className="header-button button-sold">Vends tes articles</button>
+      <Link to="/publish">
+        <button className="header-button button-sold">
+          Vends tes articles
+        </button>
+      </Link>
     </div>
   );
 };
